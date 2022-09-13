@@ -5,7 +5,7 @@
  * Prints -putchar followed by a new line
  * Return: Always 0 (Success)
  */
-char _putchar(int);
+int _putchar(int, char *);
 /**
  * print_alphabet - function to print alphabet
  *
