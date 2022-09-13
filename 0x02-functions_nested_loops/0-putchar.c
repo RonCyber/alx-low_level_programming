@@ -7,13 +7,7 @@
  */
 int main(void)
 {
-char c[10] = "_putchar";
-int i = 0;
-while (i < 9)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar("\n");
+_putchar("_putchar");
+_space("\n");
 return (0);
 }
