@@ -6,6 +6,7 @@
  * Return: Always 0 (Success)
  */
 int _putchar(char c);
+char _space(char *);
 /**
  * print_alphabet - function to print alphabet
  *
