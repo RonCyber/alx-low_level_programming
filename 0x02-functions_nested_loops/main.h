@@ -15,5 +15,5 @@ void print_alphabet(void);
  * print_alphabet_x10 prints alphabet 10 times in lowercase followed by a new line
  * Return: 0 always
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 #endif
