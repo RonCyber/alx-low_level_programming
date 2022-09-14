@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * jack_bauer - prints time of the day
- *
+ * Return: Always 0
  */
 void jack_bauer(void)
 {
@@ -19,5 +19,5 @@ void jack_bauer(void)
 			_putchar(j % 10 + '0');
 			_putchar('\n');
 		}
-	}
+	} return (0);
 }
