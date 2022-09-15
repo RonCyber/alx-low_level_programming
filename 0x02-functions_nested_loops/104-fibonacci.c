@@ -7,14 +7,14 @@
 int main(void)
 {
 	int counter = 2;
-	long int a = 1;
-	long int b = a + 1;
-	long int c = a + b;
+	float a = 1;
+	float b = a + 1;
+	float c = a + b;
 
-	printf("%ld, %ld, ", a, b);
+	printf("%.0f, %.0f, ", a, b);
 	while (counter < 98)
 	{
-		printf("%ld", c);
+		printf("%.0f", c);
 		counter++;
 		a = b;
 		b = c;
