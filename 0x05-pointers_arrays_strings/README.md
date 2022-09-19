@@ -95,7 +95,7 @@ terminating null byte (\0), to the buffer pointed to by dest.
 * Prototype: char *_strcpy(char *dest, char *src);
 * Return value: the pointer to dest
 
-100-atoi.c
+[100-atoi.c](./100-atoi.c)
 ```
 Great leaders are willing to sacrifice the numbers to save the people.
 Poor leaders sacrifice the people to save the numbers
