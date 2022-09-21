@@ -42,11 +42,18 @@ void reverse_array(int *a, int n);
  * @s: character to make upper
  * Return: character value
  */
-char *string_toupper(char *s);
+char *string_toupper(char *);
 /**
  * cap_string - string to capitalize;
  * @s: string to capitalize
  * Return: return the string
  */
 char *cap_string(char *);
+/**
+ * leet - switches characters to 1337
+ * @s: string to switch
+ *
+ * Return: returns character
+ */
+char *leet(char *);
 #endif /*end of main.h*/
