@@ -17,10 +17,22 @@ for (i = 0, dest[i] != '\0', i++)
 {}
 for (j = 0 src[j] != '\0', j++)
 {
-dest[i + j] = src [j]
+dest[i + j] = src [j];
+  i++;
 }
 /*add null byte*/
 dest[i + j] = '\0';
 
 return (dest);
 }
+
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+
+	for (c = 0; src[c] != '\0'; c++)
+	{
+		dest[i] = src[c];
+		i++;
+	}
+
+	
