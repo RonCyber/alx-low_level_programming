@@ -56,4 +56,5 @@ char *cap_string(char *s);
  * Return: returns character
  */
 char *leet(char *s);
+void print_number(int n);
 #endif /*end of main.h*/
