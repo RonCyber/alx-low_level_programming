@@ -9,18 +9,18 @@
  */
 char *_strcat(char *dest, char *src)
 {
-int j, i;
+int i, c;
 
 /*find the size of dest and src arrays and iterate them from 0 without null byte then add them*/
-for (i = 0, dest[i] != '\0', i++)
-{
-for (j = 0 src[j] != '\0', j++)
-{
-dest[i + j] = src [j];
-  i++;
-}
-/*add null byte*/
-dest[i + j] = '\0';
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-return (dest);
+	for (c = 0; src[c] != '\0'; c++)
+	{
+		dest[i] = src[c];
+		i++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
