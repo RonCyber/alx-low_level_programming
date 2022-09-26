@@ -2,7 +2,7 @@
 /**
  * print_chessboard - prints chessboard
  * @a: prints things
- * Return: returns 0
+ * Return: returns nothing
  */
 
 void print_chessboard(char (*a)[8])
