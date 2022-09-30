@@ -1,44 +1,52 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <ctype.h>
-#define UNUSED(x) (void)(x)
+#include <string.h>
 /**
- * check - checks string
- * @s: string to check
- * Return: boolean
- */
-int check(char *s)
+ * isNum - check if string array is num
+ * @num: string to check
+ * Return: 0 if it's a number
+ *         1 if it's not a number
+*/
+int isNum(char num[])
 {
-	int i = 0;
+	int i, l = strlen(num);
 
-	for (; s[i] != '\0'; i++)
+	for (i = 0; i < l; i++)
 	{
-		if (!isdigit(s[i]))
-		{
-			return (0);
-		}
+		if (!isdigit(num[i]))
+			return (1);
 	}
-	return (1);
+	return (0);
 }
+
+
 /**
- * main - main function
- * @argc: argumentc
- * @argv: vector of arguments
- *Return: always 0
- */
+ * main - a program that adds positive numbers
+ *
+ * @argc: holds the number of arguments passed
+ * @argv: array pointer that holds the arguments passed
+ *
+ * Return: Always 0 (Success)
+*/
+
 int main(int argc, char *argv[])
 {
-	int i;
-	int result = 0;
+	int i, sum;
 
-	if (argc > 1)
+	if (argc == 1)
 	{
+		printf("0\n");
+	}
+	else
+	{
+		sum = 0;
 		for (i = 1; i < argc; i++)
 		{
-			if (check(argv[i]))
+			if (isNum(argv[i]) == 0)
 			{
-				result += atoi(argv[i]);
+				sum += atoi(argv[i]);
 			}
 			else
 			{
@@ -46,13 +54,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		printf("%d\n", result);
-		return (0);
+		printf("%d\n", sum);
 	}
-	else
-	{
-		printf("%d\n", 0);
-		return (1);
-	}
-
+	return (0);
 }
