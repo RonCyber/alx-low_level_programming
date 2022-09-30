@@ -27,7 +27,7 @@ int check(char *s)
  * @argv: vector of arguments
  *Return: always 0
  */
-int main(int argc, char  *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int result = 0;
