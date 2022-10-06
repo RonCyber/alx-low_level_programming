@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len1 = 0;
 	len2 = 0;
-// lengths of both s1 & s2
+/*lengths of both s1 & s2*/
 	while (s2[len2] != '\0')
 		len2++;
 	while (s1[len1] != '\0')
@@ -36,7 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (i = 0; i < len1; i++)
 		s[i] = s1[i];
-// concatenate strings
+/*concatenate strings*/
 	for (i = 0; i < n; i++)
 		s[i + len1] = s2[i];
 
