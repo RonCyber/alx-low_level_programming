@@ -7,18 +7,18 @@
  * @h: head of list
  * Return: number of elements
  */
-size_t print_list(const list_t *i)
+size_t print_list(const list_t *h)
 {
-	int number = 0;
+	int count = 0;
 
-	while (i != NULL)
+	while (h != NULL)
 	{
-		if (i->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
-			printf("[%d] %s\n", i->len, i->str);
-		i = i->next;
-		number++;
+			printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		count++;
 	}
-	return (number);
+	return (count);
 }
