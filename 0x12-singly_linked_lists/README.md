@@ -4,7 +4,7 @@
 
 - Read about [data structures](https://www.notion.so/C-Programming-f13cdb9661db464f8ea326c5a2654e8e) first.
 - [Linked Lists](https://www.youtube.com/watch?v=udapt4FGY20&t=130s) 2008 UNSW Lecture.
-- YouTube and Google about linked lists.
+- Search YouTube and Google about linked lists.
 
 ---
 
